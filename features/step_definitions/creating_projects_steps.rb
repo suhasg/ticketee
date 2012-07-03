@@ -23,3 +23,8 @@ Then /^I should see "(.*?)"$/ do |text|
   body.should match(/#{text}/m)
 #  pending # express the regexp above with the code you wish you had
 end
+
+Then /^I should be on (.*?)$/ do |page|
+  visit path_to(page)
+end
+

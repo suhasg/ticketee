@@ -20,6 +20,7 @@ module NavigationHelpers
     #     user_profile_path(User.find_by_login($1))
     when /New Project\s?/
       new_project_path
+
     else
       begin
         page_name =~ /the (.*) page/
