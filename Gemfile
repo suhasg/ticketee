@@ -23,24 +23,30 @@ end
 
 gem 'mysql2'
 
-gem 'minitest'
 
 gem 'jquery-rails'
 
 group :test do
   # Pretty printed test output
   gem 'turn', :require => false
+  gem 'minitest', '>= 3.2.0'
 end
 
 group :test, :development do
   gem 'rspec-rails', '~> 2.5'
+  gem 'minitest', '>= 3.2.0'
 end
 
 group :test do
   gem 'cucumber-rails'
   gem 'capybara'
   gem'database_cleaner'
+  gem 'minitest', '>= 3.2.0'
+  gem 'factory_girl'
+
 end
+
+gem 'devise', '~> 1.4.3'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
