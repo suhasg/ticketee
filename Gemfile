@@ -20,6 +20,10 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
 end
 
+gem 'mysql2'
+
+gem 'minitest'
+
 gem 'jquery-rails'
 
 group :test do
