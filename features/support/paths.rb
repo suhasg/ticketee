@@ -24,8 +24,12 @@ module NavigationHelpers
     when /New Project\s?/
       new_project_path
 
+    when /^the edit page for "(.*)"$/
+      edit_project_path(Project.find_by_name($1))
+
     when /([^\"]*)/
       project_path(Project.find_by_name!($1))
+    
     else
       begin
         page_name =~ /the (.*) page/
