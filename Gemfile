@@ -43,7 +43,7 @@ group :test do
   gem'database_cleaner'
   gem 'minitest', '>= 3.2.0'
   gem 'factory_girl'
-
+  gem 'email_spec'
 end
 
 gem 'devise', '~> 1.4.3'
